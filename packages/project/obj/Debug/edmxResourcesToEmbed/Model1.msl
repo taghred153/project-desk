@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="examdeskModelStoreContainer" CdmEntityContainer="examdeskEntities">
+    <EntitySetMapping Name="adminns">
+      <EntityTypeMapping TypeName="examdeskModel.adminn">
+        <MappingFragment StoreEntitySet="adminn">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="admin_password" ColumnName="admin_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="examdeskModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
